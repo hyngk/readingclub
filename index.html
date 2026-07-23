@@ -993,7 +993,7 @@
         // Generic Gemini API Text Fetch Helper with Exponential Backoff
         async function callGeminiText(userQuery, systemPrompt = "") {
             const apiKey = "AQ.Ab8RN6JRIsmw46fWmF7eshff1EBjllgc1lb-3fVy_Sa2cdP-Sw";
-            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`;
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
 
             const payload = {
                 contents: [{ parts: [{ text: userQuery }] }]
